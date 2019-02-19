@@ -4,7 +4,9 @@
   "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "winpack": "electron-packager . xdtechweb --platform=win32 --out ../xdtechwebDir --arch=x64 --app-version=0.0.2 --electron-version=4.0.4 --overwrite",
+    "ospack": "electron-packager . xdtechweb --platform=darwin --out ../xdtechwebDir --arch=x64 --app-version=0.0.2 --electron-version=4.0.4 --overwrite"
   },
   "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [

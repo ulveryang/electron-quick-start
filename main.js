@@ -11,10 +11,10 @@ function createWindow() {
          width: 1800,
          height: 500 * 2,
         webPreferences: {
-            nodeIntegration: true
+            nodeIntegration: true,
+            defaultEncoding:"UTF-8"
         }
     })
-
     // and load the index.html of the app.
     // mainWindow.loadFile('index.html')
     mainWindow.loadURL("http://192.168.0.2:9090/xdtechweb/admin/index")
